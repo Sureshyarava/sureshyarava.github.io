@@ -1,0 +1,28 @@
+[
+  {
+      "jobTitle": "Junior Software Test Automation Engineer",
+      "companyName": "EPAM Systems",
+      "datesEmployment": "July 2022 - July 2023",
+      "responsibilities" : [
+          "Designed and implemented Java/Spring Boot/PostgreSQL solutions for payment gateway enhancement, integrating Mada and Rupay cards with Mastercard Payment Gateway. Developed RESTful APIs and microservices using Spring MVC and Spring Cloud for seamless payment processing.",
+          "Utilized Spring Cloud components such as Eureka for service discovery and Feign for declarative REST client, enabling efficient communication between microservices. Implemented Spring Data JPA for database operations and Spring Batch for processing large volumes of transactions.",
+          "Led critical infrastructure migrations, including moving NPCI services from OLTP to the Acquirer Subsystem (AcqSubsystem) in lower environments, ensuring uninterrupted transaction processing. Leveraged Spring Boot’s auto-configuration and dependency management for streamlined development and deployment.",
+          "Established robust quality assurance practices by building and maintaining automated test frameworks using Selenium,JUnit, and Cucumber. Developed and executed test automation scripts implementing Page Object Model for functional and non-functional validation. Utilized Cucumber’s BDD approach with Gherkin syntax to create clear, human-readable test scenarios, enhancing collaboration between development, QA, and business teams.",
+          "Employed various tools for efficient development and troubleshooting, including MobaXterm for remote server access and Splunk for log analysis and issue resolution. Documented procedures and system changes in Confluence.",
+          "Utilized Rally Software for agile project management, tracking user stories, defects, and sprint progress. Participated in daily regression/green room/release room calls for smooth release sign-offs and used Rally’s reporting features for sprint retrospectives."
+      ],
+      "achievements": ["🔁 Successfully led the migration of NPCI services from OLTP to Acquirer Subsystem(AcqSubsystem), contributing to uninterrupted transaction services."," 🚀 Received Delivery Excellence Award for exceptional performance in project delivery."
+  ],
+      "skillsUtilized": ["Java", "Selenium", "Git", "BDD (Behavioral Driven Development)", "Cucumber", "PostgreSQL", "Rest Assured", "Linux", "Jenkins", "Spring (Boot, MVC, Cloud, Data, Security, JDBC)"],
+      "projects": []
+    },
+    {
+      "jobTitle": "Junior Software Engineer Intern",
+      "companyName": "EPAM Systems",
+      "datesEmployment": "Feb 2022 - June 2023",
+      "responsibilities": ["Actively contribute to test automation by creating and enhancing page object models for internal websites using Selenium WebDriver.", "Collaborate with the team to participate in testing processes and gain hands-on experience in automated testing practices."],
+      "achievements": ["🙌 Recognized with a PAT on Back Award for outstanding contributions during internship."],
+      "skillsUtilized": ["Java", "Selenium", "Git", "DesignPatterns"],
+      "projects": []
+    }
+]
