@@ -1,11 +1,11 @@
 import React from 'react';
 import '../Css/MacOSTerminalWindow.css'; // Import CSS file for styling
-import Project from './Project';
-import Education from './Education';
-import WorkExperience from './WorkExperience';
-import Skills from './Skills';
-import Publication from './Publication';
-import Achievements from './Achievments';
+import Project from './Project.jsx';
+import Education from './Education.jsx';
+import WorkExperience from './WorkExperience.jsx';
+import Skills from './Skills.jsx';
+import Publication from './Publication.jsx';
+import Achievements from './Achievments.jsx';
 import Educationlist from '../Json Files/EducationList.json'
 import Experiences from '../Json Files/Experiences.json'
 import SkillList from '../Json Files/SkillList.json'

@@ -1,7 +1,7 @@
 import '../Css/App.css';
-import AboutMe from './AboutMe';
-import MacOSTerminalWindow from './MacOSTerminalWindow';
-import MacOSTerminalHeader from './MacosTerminalHeader';
+import AboutMe from './AboutMe.jsx';
+import MacOSTerminalWindow from './MacOSTerminalWindow.jsx';
+import MacOSTerminalHeader from './MacosTerminalHeader.jsx';
 import Animation from './Animation'
 
 function App() {
