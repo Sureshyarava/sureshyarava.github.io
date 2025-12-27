@@ -1,0 +1,88 @@
+{
+  "intro": {
+    "name": "Venkata Suresh Yarava",
+    "title": "Full Stack Developer | CS Graduate Student",
+    "description": "Specializing in front-end and back-end technologies, crafting interactive UIs, and building secure, efficient services."
+  },
+  "about": {
+    "description": "As a Full Stack Engineer with a specialization in Generative AI, I build scalable systems that solve real-world problems. My expertise spans the full development lifecycle, blending backend power (Python, Java, Kafka) with modern frontend interactivity (React, WebGL). I am deeply focused on production engineering—leveraging CI/CD, Kubernetes, and Cloud infrastructure to ensure that the innovative AI features I create are robust, secure, and highly available. Driven by a continuous growth mindset, I am constantly exploring new frontiers in distributed systems and agentic AI to deliver software that is as reliable as it is revolutionary."
+  },
+  "skills": {
+    "languages": ["Java", "C#", "Python", "Golang", "C++", "JavaScript", "TypeScript", "SQL (MySQL, PostgreSQL)"],
+    "backend": ["Spring Boot", "Node.js/Express", "Flask", "FastAPI", "Django"],
+    "frontend": ["React", "Redux", "Three.js"],
+    "distributed": ["Apache Kafka", "Apache Flink", "Redis", "Spring Cloud"],
+    "databases": ["PostgreSQL", "MySQL", "MongoDB", "Oracle", "Snowflake", "Couchbase", "S3"],
+    "cloud": ["Microsoft Azure (AKS, Functions, DevOps)", "AWS (EC2, EKS, Lambda, Glue, DynamoDB)", "Docker", "Kubernetes", "Terraform", "Jenkins", "Git", "CI/CD"],
+    "data": ["Pandas", "NumPy", "PyTorch/TensorFlow", "Scikit-learn", "Transformers", "OpenCTM"],
+    "tools": ["Rally", "Splunk", "MobaXterm", "Git", "REST APIs", "Linux", "Confluence", "Visual Studio", "IntelliJ IDEA"]
+  },
+  "education": [
+    {
+      "school": "University of Florida",
+      "degree": "Master of Science in Computer Science",
+      "period": "2023 - 2025",
+      "location": "Gainesville, FL"
+    },
+    {
+      "school": "Vardhaman College of Engineering",
+      "degree": "Bachelor of Technology in Electrical and Electronics Engineering",
+      "period": "2018 - 2022",
+      "location": "Hyderabad, India"
+    }
+  ],
+  "experience": [
+    {"company": "Florida Museum of Natural History (University of Florida)",
+      "role": "Software Developer",
+      "period": "July 2025 - present",
+      "details": [
+        "Led the full-stack development of the Chondrichthyan Tree of Life, a comprehensive geospatial and phylogenetic visualization platform supporting global research for 1,279 marine species.",
+        "Designed a high-efficiency data pipeline serving 8,048 3D anatomy models, leveraging OpenCTM compression (85% size reduction) and multi-layer caching to decrease network traffic by 70%.",
+        "Engineered a hybrid rendering system (SVG/Canvas/WebGL) achieving 60fps performance and sub-3-second load times, enabling real-time interactive exploration of complex biological data."
+        ]},
+    {
+      "company": "EPAM Systems",
+      "role": "Software Engineer",
+      "period": "June 2022 - July 2023",
+      "details": [
+        "Engineered high-volume payment processing modules and secure RESTful APIs using Java and Spring Boot, integrating Mada and Rupay schemes into the Mastercard Payment Gateway to process millions of daily transactions",
+        "Led the critical migration of NPCI services from legacy OLTP systems to a modern Acquirer Subsystem, significantly reducing transaction latency and ensuring zero downtime during the cutover.",
+        "Executed rigorous End-to-End MTF testing for MADA card transactions to validate authorization and clearing flows, received the Delivery Excellence Award for exceptional contributions to platform stability and infrastructure modernization."
+      ]
+    },
+    {
+        "company": "EPAM Systems",
+      "role": "Software Engineer Internship",
+      "period": "Feb 2022 - May 2022",
+      "details": [
+        "Developed and optimized RESTful APIs using Java and Spring Boot to support internal reporting tools, facilitating efficient data retrieval for project management dashboards.",
+        "Ensured software quality by implementing automated test suites using the Cucumber BDD framework, which verified functional correctness and reduced regression testing cycles.",
+        "Streamlined daily development workflows by engineering Python scripts for data validation and file manipulation, significantly reducing manual error rates and processing time."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "ForestLens",
+      "description": "Developed an interactive geospatial platform for forest monitoring, enabling researchers to visualize satellite imagery and track phenological changes from 2018 to 2024. Engineered intuitive tools for marking and documenting tree health metrics, facilitating the longitudinal analysis of seasonal leaf growth and flowering patterns."
+    },
+    {
+      "title": "Crime Data Analysis",
+      "description": "Conducted a comprehensive 20-year analysis of temporal and spatial crime trends, utilizing computational methods to isolate long-term patterns from seasonal fluctuations. Leveraged IUCR codes to model serious crime progression and forecast potential spikes, empowering users with data-driven insights for location-specific safety assessments and proactive prevention."
+    },
+    {
+      "title": "Patch-Based Adversarial Attack on DeepISP",
+      "description": "Evaluated the vulnerability of DeepISP to patch-based adversarial attacks, utilizing YOLOv8 and SSIM to measure the impact on image reconstruction and object detection. Successfully reduced average detection rates from 88% to 53%, highlighting critical security gaps and the need for robust defense mechanisms in deep learning-based ISP pipelines."
+    }
+  ],
+  "contact": {
+    "location": "San Jose, California, USA",
+    "email": "yarava.venkatasu@ufl.edu",
+    "links": [
+      { "name": "GitHub", "url": "https://github.com/Sureshyarava" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/yaravavenkatasuresh/" },
+      { "name": "LeetCode", "url": "https://leetcode.com/sureshyarava340/" },
+      { "name": "CodeForces", "url": "https://codeforces.com/profile/Sureshyarava" }
+    ]
+  }
+}
