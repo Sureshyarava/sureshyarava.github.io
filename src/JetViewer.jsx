@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useLayoutEffect, useRef } from "react";
+import React, { Suspense, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, Html, useProgress, useAnimations, ScrollControls, useScroll, Scroll } from "@react-three/drei";
 import * as THREE from "three";
@@ -89,12 +89,28 @@ function Model({ url }) {
 }
 
 export default function JetViewer() {
+  const [pages, setPages] = useState(7);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setPages(8); // More scroll space for mobile
+      } else {
+        setPages(7);
+      }
+    };
+    
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div style={{ height: "100vh", width: "100vw", background: "var(--paper-color)" }}>
       <Canvas camera={{ position: [0, 2, 5], fov: 50 }}>
         <ambientLight intensity={1} />
 
-        <ScrollControls pages={7} damping={0.2}>
+        <ScrollControls pages={pages} damping={0.2}>
           <Suspense fallback={<Loader />}>
             <Model url="/turbine-01.glb" />
           </Suspense>
