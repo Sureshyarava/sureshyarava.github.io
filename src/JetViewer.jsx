@@ -10,7 +10,6 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Education } from "./components/Education";
 import { Contact } from "./components/Contact";
-import { Icons } from "./components/Icons";
 
 const WAYPOINTS = [
   { position: [1.8, 0, 0], rotation: [Math.PI, Math.PI/2, 0] },
@@ -26,7 +25,7 @@ function Loader() {
   return null;
 }
 
-function Model({ url }) {
+function Model({ url, isMobile }) {
   const { scene, animations } = useGLTF(url);
   const { actions } = useAnimations(animations, scene);
   
@@ -49,21 +48,37 @@ function Model({ url }) {
           color: paperColor, 
           polygonOffset: true, 
           polygonOffsetFactor: 1, 
-          polygonOffsetUnits: 1
+          polygonOffsetUnits: 1,
+          transparent: isMobile,
+          opacity: isMobile ? 0.5 : 1
         });
 
-        if (!obj.getObjectByName("outline")) {
+        let line = obj.getObjectByName("outline");
+        if (!line) {
           const edges = new THREE.EdgesGeometry(obj.geometry, 40); 
           const lineMat = new THREE.LineBasicMaterial({ color: "#333333", linewidth: 2 });
-          const line = new THREE.LineSegments(edges, lineMat);
+          line = new THREE.LineSegments(edges, lineMat);
           line.name = "outline"; 
           obj.add(line);
         }
+
+        if (line) {
+          line.material.transparent = isMobile;
+          line.material.opacity = isMobile ? 0.2 : 1;
+        }
       }
     });
-  }, [scene]);
+  }, [scene, isMobile]);
 
   useFrame(() => {
+    if (isMobile) {
+      if (modelRef.current) {
+        modelRef.current.position.set(0, 0, 0);
+        modelRef.current.rotation.set(-Math.PI, Math.PI / 2, 0);
+      }
+      return;
+    }
+
     const numSegments = WAYPOINTS.length - 1; 
     const scrollPos = scroll.offset * numSegments; 
     const currentSegment = Math.floor(scrollPos); 
@@ -90,10 +105,13 @@ function Model({ url }) {
 
 export default function JetViewer() {
   const [pages, setPages] = useState(7);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      if (mobile) {
         setPages(11); // More scroll space for mobile
       } else {
         setPages(7);
@@ -112,7 +130,7 @@ export default function JetViewer() {
 
         <ScrollControls pages={pages} damping={0.2}>
           <Suspense fallback={<Loader />}>
-            <Model url="/turbine-01.glb" />
+            <Model url="/turbine-01.glb" isMobile={isMobile} />
           </Suspense>
           
           <Scroll html style={{ width: "100%" }}>
