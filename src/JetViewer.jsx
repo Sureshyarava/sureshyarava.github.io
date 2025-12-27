@@ -94,7 +94,7 @@ export default function JetViewer() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setPages(8); // More scroll space for mobile
+        setPages(11); // More scroll space for mobile
       } else {
         setPages(7);
       }
