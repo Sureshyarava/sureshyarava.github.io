@@ -23,34 +23,7 @@ const WAYPOINTS = [
 ];
 
 function Loader() {
-  const { progress } = useProgress();
-  const links = data.contact.links;
-  
-  return (
-    <Html center>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem" }}>
-        <div style={{ fontSize: "1.5rem", fontFamily: "Times New Roman" }}>{progress.toFixed(0)}% loaded</div>
-        <div style={{ display: "flex", gap: "1rem" }}>
-          {links.map((link) => {
-             // Determine icon based on name
-             let Icon = null;
-             if (link.name === "GitHub") Icon = Icons.GitHub;
-             if (link.name === "LinkedIn") Icon = Icons.LinkedIn;
-             if (link.name === "LeetCode") Icon = Icons.LeetCode;
-             if (link.name === "CodeForces") Icon = Icons.CodeForces;
-             
-             if (!Icon) return null;
-
-             return (
-               <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.5rem" }}>
-                 <Icon width={24} height={24} />
-               </a>
-             );
-          })}
-        </div>
-      </div>
-    </Html>
-  );
+  return null;
 }
 
 function Model({ url }) {
