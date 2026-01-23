@@ -5,11 +5,11 @@
     "description": "Specializing in front-end and back-end technologies, crafting interactive UIs, and building secure, efficient services."
   },
   "about": {
-    "description": "As a Full Stack Engineer with a specialization in Generative AI, I build scalable systems that solve real-world problems. My expertise spans the full development lifecycle, blending backend power (Python, Java, Kafka) with modern frontend interactivity (React, WebGL). I am deeply focused on production engineering—leveraging CI/CD, Kubernetes, and Cloud infrastructure to ensure that the innovative AI features I create are robust, secure, and highly available. Driven by a continuous growth mindset, I am constantly exploring new frontiers in distributed systems and agentic AI to deliver software that is as reliable as it is revolutionary."
+    "description": "Results-driven Software Engineer with 5 years of experience designing and developing scalable backend systems, distributed applications, and full-stack solutions. Proven expertise in Java/Spring Boot, Golang, and cloud technologies (Azure, AWS), with a strong track record in payment processing systems, microservices architecture, and CI/CD automation. Skilled in building high-performance applications, implementing robust testing strategies, and delivering zero-downtime deployments for mission-critical systems."
   },
   "skills": {
     "languages": ["Java", "C#", "Python", "Golang", "C++", "JavaScript", "TypeScript", "SQL (MySQL, PostgreSQL)"],
-    "backend": ["Spring Boot", "Node.js/Express", "Flask", "FastAPI", "Django"],
+    "backend": ["Spring Boot", "Node.js/Express", "Gin", "Flask", "FastAPI"],
     "frontend": ["React", "Redux", "Three.js"],
     "distributed": ["Apache Kafka", "Apache Flink", "Redis", "Spring Cloud"],
     "databases": ["PostgreSQL", "MySQL", "MongoDB", "Oracle", "Snowflake", "Couchbase", "S3"],
@@ -53,7 +53,7 @@
     {
         "company": "LIC (Life Insurance Corporation)",
       "role": "Software Developer",
-      "period": "Aug 2021 - Jan 2022",
+      "period": "Aug 2020 - Jan 2022",
       "details": [
         "Developed and optimized RESTful APIs using Java and Spring Boot to support internal reporting tools, facilitating efficient data retrieval for project management dashboards.",
         "Ensured software quality by implementing automated test suites using the Cucumber BDD framework, which verified functional correctness and reduced regression testing cycles.",
