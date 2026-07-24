@@ -34,7 +34,7 @@
   "experience": [
     {"company": "Florida Museum of Natural History (University of Florida)",
       "role": "AI Software Engineer",
-      "period": "Aug 2024 - present",
+      "period": "Aug 2025 - present",
       "details": [
         "Led the full-stack development of the Chondrichthyan Tree of Life, a comprehensive geospatial and phylogenetic visualization platform supporting global research for 1,279 marine species.",
         "Designed a high-efficiency data pipeline serving 8,048 3D anatomy models, leveraging OpenCTM compression (85% size reduction) and multi-layer caching to decrease network traffic by 70%.",
@@ -48,16 +48,6 @@
         "Engineered high-volume payment processing modules and secure RESTful APIs using Java and Spring Boot, integrating Mada and Rupay schemes into the Mastercard Payment Gateway to process millions of daily transactions",
         "Led the critical migration of NPCI services from legacy OLTP systems to a modern Acquirer Subsystem, significantly reducing transaction latency and ensuring zero downtime during the cutover.",
         "Executed rigorous End-to-End MTF testing for MADA card transactions to validate authorization and clearing flows, received the Delivery Excellence Award for exceptional contributions to platform stability and infrastructure modernization."
-      ]
-    },
-    {
-        "company": "LIC (Life Insurance Corporation)",
-      "role": "Software Developer",
-      "period": "Aug 2020 - Jan 2022",
-      "details": [
-        "Developed and optimized RESTful APIs using Java and Spring Boot to support internal reporting tools, facilitating efficient data retrieval for project management dashboards.",
-        "Ensured software quality by implementing automated test suites using the Cucumber BDD framework, which verified functional correctness and reduced regression testing cycles.",
-        "Streamlined daily development workflows by engineering Python scripts for data validation and file manipulation, significantly reducing manual error rates and processing time."
       ]
     }
   ],
@@ -76,7 +66,7 @@
     }
   ],
   "contact": {
-    "location": "San Jose, California, USA",
+    "location": "Gainesville, Florida, USA",
     "email": "yarava.venkatasu@ufl.edu",
     "links": [
       { "name": "GitHub", "url": "https://github.com/Sureshyarava" },
